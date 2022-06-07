@@ -1,9 +1,10 @@
+import mlflow
+import torch
+import pandas as pd
+from transformers import AutoTokenizer, AutoModelForTokenClassification, pipeline
+
 class TransformerNERModel(mlflow.pyfunc.PythonModel):
     # expects an input dataframe with at least the columns "content" and "id"
-
-    import torch
-    import pandas as pd
-    from transformers import AutoTokenizer, AutoModelForTokenClassification, pipeline
     
     def __init__(self, model):
         self._device = "cuda:0" if torch.cuda.is_available() else "cpu"
