@@ -1,0 +1,9 @@
+{
+    "environments": {
+        "default": {
+            "profile": "DEFAULT",
+            "workspace_dir": "/Shared/dbx/projects/transformers_mlflow",
+            "artifact_location": "dbfs:/dbx/transformers_mlflow"
+        }
+    }
+}

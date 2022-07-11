@@ -5,7 +5,11 @@ name = "pypi"
 
 [packages]
 dbx = "*"
+pandas = "*"
+torch = "*"
 transformers = "*"
+mlflow = "*"
+pytest = "*"
 
 [dev-packages]
 pytest = "*"
